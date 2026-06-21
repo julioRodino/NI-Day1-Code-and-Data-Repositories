@@ -106,21 +106,14 @@ Make a change to `experiment_1.txt` and check the status - it should show you a 
 
 
 ```python
-#After modifying experiment_1.txt:
-git commit -am "Add data to experiment 1"
-git status
+
 ```
 
 **Exercise**: Make changes to `experiment_2.txt` and `experiment_3.txt` and save them in a single commit. Check the status whenever you need to.
 
 
 ```python
-#After modifying experiment_2.txt and experiment_3.txt:
-git status
-git add .
-git status
-git commit -m "New data for experiments 2 & 3"
-git status
+
 ```
 
 **Exercise**: Delete `experiment_3.txt`, check the status and commit the change.
@@ -247,31 +240,12 @@ In this section, you'll start by inspecting the commit history of your project. 
 
 ```
 
-    [1mdiff --git a/experiment_3.txt b/experiment_3.txt[m
-    [1mdeleted file mode 100644[m
-    [1mindex 6e1ddff..0000000[m
-    [1m--- a/experiment_3.txt[m
-    [1m+++ /dev/null[m
-    [36m@@ -1,2 +0,0 @@[m
-    [31m-This is the 3rd experiment[m
-    [31m-There are 4 conditions[m
-
-
 **Exercise**: Compare the same commit to the working directory using `HEAD~1`.
 
 
 ```python
 
 ```
-
-    [1mdiff --git a/experiment_3.txt b/experiment_3.txt[m
-    [1mdeleted file mode 100644[m
-    [1mindex 6e1ddff..0000000[m
-    [1m--- a/experiment_3.txt[m
-    [1m+++ /dev/null[m
-    [36m@@ -1,2 +0,0 @@[m
-    [31m-This is the 3rd experiment[m
-    [31m-There are 4 conditions[m
 
 
 **Exercise**: Compare the differences between the third-most-recent commit and the working directory using `HEAD` or the hash.
